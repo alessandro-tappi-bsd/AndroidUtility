@@ -1,13 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
 
 def groupProjectID = 'it.smasini'
 def artifactProjectID = 'android-utility'
 def publishVersionID = '1.6.3'
 
-bintray.user="smasini"
-bintray.key=""
 
 ext {
     bintrayRepo = 'maven'
@@ -62,7 +59,6 @@ dependencies {
 }
 
 
-apply from: 'bintray.gradle'
 
 //vecchio comando
 //./gradlew clean build bintrayUpload -PbintrayUser=smasini -PbintrayKey=b668f605c7d5bf41d6f52f842e29b42b42773a73 -PdryRun=false
